@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumit Ahirekar | Automotive Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+            color: #334155; /* slate-700 */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 450px; /* Increased height for more skills */
+            max-height: 60vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 550px;
+            }
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #4f46e5; /* indigo-600 */
+        }
+        .project-tab {
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .project-tab.active {
+            background-color: #4f46e5; /* indigo-600 */
+            color: #ffffff;
+            border-color: #4f46e5; /* indigo-600 */
+        }
+        .project-tab:not(.active):hover {
+            background-color: #e0e7ff; /* indigo-100 */
+            border-color: #a5b4fc; /* indigo-300 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-lg font-bold text-slate-800">
+                Sumit Ahirekar [cite: 2]
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="nav-link text-slate-600">About</a>
+                <a href="#skills" class="nav-link text-slate-600">Skills</a>
+                <a href="#experience" class="nav-link text-slate-600">Experience</a>
+                <a href="#education" class="nav-link text-slate-600">Education</a>
+                <a href="#contact" class="nav-link text-slate-600">Contact</a>
+            </div>
+            <a href="mailto:sumitahirekar22@gmail.com" class="hidden md:block bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 transition">Contact Me [cite: 3]</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <section id="hero" class="text-center py-20">
+            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 leading-tight">Sumit Ahirekar [cite: 2]</h1>
+            <p class="mt-4 text-xl md:text-2xl text-indigo-600 font-medium">Automotive Software Engineer [cite: 4]</p>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-slate-600">
+                Highly motivated Automotive Software Engineer with 3+ years of experience in embedded systems and cybersecurity. [cite: 4]
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="https://www.linkedin.com/in/sumit-ahirekar-9a8288144" target="_blank" class="bg-indigo-600 text-white px-6 py-3 rounded-md hover:bg-indigo-700 transition shadow-sm">
+                    LinkedIn Profile
+                </a>
+                <a href="#contact" class="bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-md hover:bg-slate-100 transition shadow-sm">
+                    Contact Info
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 md:py-24 bg-white rounded-2xl shadow-lg">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-slate-800">About Me [cite: 1]</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4 mb-12"></div>
+                <div class="text-lg text-slate-700 leading-relaxed space-y-4">
+                    <p>
+                        Highly motivated Automotive Software Engineer with 3+ years of experience in embedded systems and cybersecurity. [cite: 4]
+                    </p>
+                    <p>
+                        Proficient in AUTOSAR project integration and ASPICE-aligned software engineering processes (SWE.1, SWE.3, SWE.4, SWE.5). [cite: 5]
+                    </p>
+                    <p>
+                        Proven expertise in developing ECU software for BCM, Interior Lighting, and HVAC systems, with a strong background in AUTOSAR stack development (Crypto, SecOC, E2E, RTE, OS). [cite: 6]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-16 md:py-24">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-slate-800">Technical Skills [cite: 11]</h2>
+                <p class="text-center mt-4 mb-6 text-lg text-slate-600">A visual overview of my proficiency with key tools and technologies. Hover over the bars to see details.</p>
+                
+                <div class="max-w-4xl mx-auto px-6 mb-12">
+                    <h3 class="text-xl font-semibold text-center text-slate-800 mb-4">Core Competencies [cite: 12]</h3>
+                    <p class="text-center text-slate-600 leading-relaxed">
+                        AUTOSAR, Embedded C, Cybersecurity (Crypto Stack, SecOC), ASW Layer Development, Software Integration, Testing & Validation, Memory Optimization, MISRA & AUTOSAR Standards Compliance, Software Architecture Design & Review, Stakeholder Collaboration (OEM, Test Teams), CAN, LIN, UDS, ASPICE, RTOS, BSW & MCAL Configuration, Board Bring-up [cite: 12]
+                    </p>
+                </div>
+                
+                <div class="bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
+                    <div class="chart-container">
+                        <canvas id="skillsChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 md:py-24">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-slate-800">Professional Experience [cite: 14]</h2>
+                
+                <div class="text-center mt-8 mb-12">
+                    <h3 class="text-2xl font-semibold text-indigo-700">Engineer [cite: 17]</h3>
+                    <p class="text-xl font-medium text-slate-700">Verolt Technology Pvt Ltd, Pune, India [cite: 15, 16]</p>
+                    <p class="text-lg text-slate-500">Jan 2023 - Present [cite: 18]</p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8 mb-12">
+                    <h4 class="text-xl font-semibold text-slate-800 mb-4">Key Responsibilities</h4>
+                    <ul class="list-disc list-inside space-y-3 text-slate-700">
+                        <li>Specialized in AUTOSAR-based ECU software development, developing applications for the ASW layer in compliance with MISRA and AUTOSAR classic standards. [cite: 19]</li>
+                        <li>Managed the full software lifecycle, including software integration, testing, validation, and memory usage optimization. [cite: 20]</li>
+                        <li>Contributed to software architecture design and review sessions, and executed low-level MCAL configuration and board bring-up. [cite: 21]</li>
+                        <li>Implemented cybersecurity features for Tier-1 automotive projects, including Crypto Stack and SecOC integration. [cite: 22]</li>
+                        <li>Collaborated directly with system engineers, test teams, and OEM stakeholders to ensure alignment with project requirements. [cite: 23]</li>
+                    </ul>
+                </div>
+
+                <h3 class="text-2xl font-bold text-center text-slate-800 mt-16 mb-4">Key Projects [cite: 24]</h3>
+                <p class="text-center mt-4 mb-12 text-lg text-slate-600">Select a project below to view my specific role and contributions.</p>
+                
+                <div id="projects-container" class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="flex flex-wrap border-b border-slate-200">
+                        </div>
+                    <div class="p-6 md:p-10">
+                        <div id="project-details">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-16 md:py-24 bg-slate-100">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-slate-800">Education [cite: 7, 8]</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4 mb-12"></div>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700">M.Tech, Embedded Systems [cite: 9]</h3>
+                        <p class="text-slate-600 mt-1">BITS Pilani (2025 - Present) [cite: 9]</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700">B.Tech, Electrical Engineering [cite: 10]</h3>
+                        <p class="text-slate-600 mt-1">MIT World Peace University (Graduated 2025) [cite: 10]</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-indigo-700">PG Diploma, Embedded Systems [cite: 10]</h3>
+                        <p class="text-slate-600 mt-1">Skill Lync (Completed 2022) [cite: 10]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 md:py-24">
+            <div class="max-w-4xl mx-auto text-center bg-white p-8 rounded-2xl shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800">Contact Me</h2>
+                <div class="w-24 h-1 bg-indigo-500 mx-auto mt-4 mb-8"></div>
+                <div class="space-y-4 text-slate-600">
+                    <p class="text-lg">
+                        You can reach me via email or phone.
+                    </p>
+                    <a href="mailto:sumitahirekar22@gmail.com" class="block text-xl font-medium text-indigo-600 hover:text-indigo-800 transition-colors">[cite: 3]sumitahirekar22@gmail.com</a>
+                    <a href="tel:+917709518870" class="block text-xl font-medium text-indigo-600 hover:text-indigo-800 transition-colors">
+                        +91 7709518870 [cite: 3]
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Sumit Ahirekar. All Rights Reserved.</p>
+            <p class="mt-2">Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- SKILLS CHART ---
+            // NOTE: Your resume lists these tools. I've assigned reasonable proficiency
+            // values to make the chart work. You can edit the 'data' array below.
+            const skillsData = {
+                labels: [
+                    'DaVinci Configurator', 'DaVinci Developer', 'PreeVISION', 'EB Tressos', 'NXP S32 Design studio', // AUTOSAR Tools
+                    'Vector Canoe', 'Tasking Debugger', 'Tessy', 'Renesas Multi Debugger', 'PcLint', 'NXP GCC', // Testing & Debugging
+                    'Git', 'JIRA', 'PTC Integrity', 'Rational Change', 'DOORS' // ALM
+                ],
+                datasets: [{
+                    label: 'Experience Level',
+                    data: [
+                        90, 85, 75, 80, 78, // AUTOSAR
+                        92, 82, 88, 85, 80, 77, // Testing
+                        90, 88, 86, 75, 79 // ALM
+                    ], 
+                    backgroundColor: 'rgba(79, 70, 229, 0.8)',
+                    borderColor: 'rgba(67, 56, 202, 1)',
+                    borderWidth: 1,
+                    borderRadius: 4,
+                    barThickness: 15,
+                }]
+            };
+
+            const skillsChartCtx = document.getElementById('skillsChart').getContext('2d');
+            new Chart(skillsChartCtx, {
+                type: 'bar',
+                data: skillsData,
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: '#1e293b',
+                            titleFont: { size: 14 },
+                            bodyFont: { size: 12 },
+                            padding: 10,
+                            cornerRadius: 4,
+                            displayColors: false,
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: { color: '#e2e8f0' },
+                            ticks: { color: '#64748b', font: { size: 12 } }
+                        },
+                        y: {
+                            grid: { display: false },
+                            ticks: { color: '#334155', font: { size: 14, weight: '500' } }
+                        }
+                    }
+                }
+            });
+
+            // --- PROJECTS TABBED INTERFACE ---
+            const projects = [
+                {
+                    title: 'Interior Lighting Control ECU', [cite: 25]
+                    description: 'Designed and implemented a full Cybersecurity module based on AUTOSAR architecture for a leading OEM.', [cite: 26]
+                    role: 'Software Engineer', [cite: 25]
+                    responsibilities: [
+                        'Developed and configured BSW (Basic Software) features and application software components.', [cite: 27]
+                        'Integrated AUTOSAR security applications, including Crypto Stack and SecOC.', [cite: 28]
+                        'Performed comprehensive software design, verification on target hardware, unit testing, and debugging.', [cite: 29]
+                    ],
+                    tools: 'DaVinci Configurator, DaVinci Developer, Tessy, Renesas Multi Debugger, Vector CANoe, Integrity LM' [cite: 30]
+                },
+                {
+                    title: 'Full Automatic Temperature Controller (FATC)', [cite: 31]
+                    description: 'Managed the integration of all software files into PTC Integrity and performed comprehensive integration testing for a major US OEM.',
+                    role: 'Integrator & Standard Software Developer', [cite: 31]
+                    responsibilities: [
+                        'Developed and tested standard software files for the HVAC system.', [cite: 32]
+                        'Handled DBC configuration and integration for CAN communication.', [cite: 32]
+                        'Integrated "Smart Climate" control features into the main software build.', [cite: 33]
+                    ],
+                    tools: 'DaVinci Configurator, CANoe, MULTI Debugger, PTC Integrity, DOORS, Rational Change' [cite: 34]
+                },
+                {
+                    title: 'Body Control Module (BCM)', [cite: 35]
+                    description: 'Managed all software integration into Git version control for a prominent Indian OEM.', [cite: 37]
+                    role: 'Integrator & Developer (App, BSW, MCAL)', [cite: 35]
+                    responsibilities: [
+                        'Conducted both integration and application feature testing.', [cite: 37]
+                        'Developed application-level software files for BCM functionalities.', [cite: 38]
+                        'Configured BSW and MCAL (Microcontroller Abstraction Layer) modules.', [cite: 38]
+                        'Executed board bring-up activities on target hardware to validate low-level driver functionality.', [cite: 39]
+                    ],
+                    tools: 'DaVinci Configurator, CANoe, PreeVISION, Git, JIRA' [cite: 39]
+                }
+            ];
+
+            const tabsContainer = document.querySelector('#projects-container .flex-wrap');
+            const detailsContainer = document.getElementById('project-details');
+
+            function displayProject(index) {
+                const project = projects[index];
+                detailsContainer.innerHTML = `
+                    <h3 class="text-2xl font-bold text-indigo-700">${project.title}</h3>
+                    <p class="mt-3 text-lg text-slate-600">${project.description}</p>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold text-slate-800">Role: <span class="font-normal text-slate-600">${project.role}</span></h4>
+                        <h4 class="mt-4 text-lg font-semibold text-slate-800">Key Responsibilities:</h4>
+                        <ul class="mt-2 list-disc list-inside space-y-2 text-slate-600">
+                            ${project.responsibilities.map(r => `<li>${r}</li>`).join('')}
+                        </ul>
+                        <h4 class="mt-4 text-lg font-semibold text-slate-800">Tools Used:</h4>
+                        <p class="mt-2 text-slate-600">${project.tools}</p>
+                    </div>
+                `;
+
+                document.querySelectorAll('.project-tab').forEach((tab, i) => {
+                    tab.classList.toggle('active', i === index);
+                });
+            }
+
+            projects.forEach((project, index) => {
+                const tab = document.createElement('button');
+                tab.className = 'project-tab flex-grow p-4 text-center font-medium border-b-2 md:border-b-0 md:border-r-2 border-slate-200';
+                tab.textContent = project.title;
+                tab.onclick = () => displayProject(index);
+                tabsContainer.appendChild(tab);
+            });
+            
+            // Display the first project by default
+            if (projects.length > 0) {
+                displayProject(0);
+            }
+        });
+    </script>
+</body>
+</html>
